@@ -42,3 +42,4 @@ body:
       options:
         - label: Check boxes option label
           required: true
+
