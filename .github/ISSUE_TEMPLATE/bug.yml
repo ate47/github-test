@@ -1,0 +1,37 @@
+name: Bug Report
+description: Describe a bug
+labels: [ "bug" ]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Markdown area!
+    - type: textarea
+      attributes:
+        label: label text area
+        description: description  text area
+        placeholder: |
+          placeholder 1
+          placeholder 2
+      validations:
+        required: true
+    - type: input
+      id: input_id
+      attributes:
+        label: input label
+        description: input description
+        placeholder: "input placeholder"
+      validations:
+        required: true
+    - type: dropdown
+      id: dropdown_id
+      attributes:
+        label: dropdown label
+        description: dropdown  description
+        options:
+            - 'description option 1'
+            - 'description option 2'
+            - 'description option 3'
+      validations:
+          required: false
+          
