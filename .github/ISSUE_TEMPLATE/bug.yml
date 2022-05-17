@@ -40,7 +40,5 @@ body:
       label: Check boxes label
       description: Check boxes description
       options:
-        - label: Check boxes option 1 label
-          required: true
-        - label: Check boxes option 2 label
+        - label: Check boxes option label
           required: true
