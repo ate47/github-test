@@ -34,4 +34,13 @@ body:
             - 'description option 3'
       validations:
           required: false
-          
+  - type: checkboxes
+    id: id_checkboxes
+    attributes:
+      label: Check boxes label
+      description: Check boxes description
+      options:
+        - label: Check boxes option 1 label
+          required: true
+        - label: Check boxes option 2 label
+          required: true
