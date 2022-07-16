@@ -1,9 +1,14 @@
-# Description
+Issue resolved (if any): # <!-- issue number -->
 
-Description of what I've fixed
+Description of this pull request:
 
-checklist:
+<!-- Describe the content of your pull request  -->
 
-- [ ] I like ATE47's cat
-- [ ] I like potatos
-- [ ] All my commits are cool
+---
+
+Please check all the lines before posting the pull request:
+
+- [ ] I've tested all my changes
+- [ ] My pull request isn't fixing or changing multiple unlinked elements (please create one pull request for each element)
+- [ ] All my commits have relevant names in English
+- [ ] I've squashed my commits (if necessary)
