@@ -6,6 +6,14 @@ body:
     attributes:
       value: |
         Thanks for helping to improve this repository!
+  - type: checkboxes
+    id: optishit
+    attributes:
+      label: The bug is occuring without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
+      description: The bug is occuring without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
+      options:
+      - label: "Yes"
+        required: true
   - type: textarea
     attributes:
       label: Description of the issue
