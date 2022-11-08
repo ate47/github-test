@@ -10,7 +10,6 @@ body:
     id: optishit
     attributes:
       label: The bug is occuring without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
-      description: The bug is occuring without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
       options:
       - label: "Yes"
         required: true
