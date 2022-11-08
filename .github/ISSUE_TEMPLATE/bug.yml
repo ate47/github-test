@@ -9,9 +9,9 @@ body:
   - type: checkboxes
     id: optishit
     attributes:
-      label: The bug is occuring without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
+      label: The bug occurs without having Optifine or Optifabric installed? (Optifine bugs won't be fixed)
       options:
-      - label: "Yes"
+      - label: "Yes, I don't have Optifine install."
         required: true
   - type: textarea
     attributes:
