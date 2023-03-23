@@ -11,6 +11,10 @@ on:
         description: "Repo"
         required: true
         type: string
+      message:
+        description: "Message"
+        required: true
+        type: string
 
 jobs:
   labels:
@@ -19,7 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: 🔃 Sync
-        shell: pwsh
-        run: "gh api repos/${{ inputs.repository }}/issues/${{ inputs.issueID }}/comments -f body='${{ inputs.syncFile }}'"
+        run: "gh api repos/${{ inputs.repository }}/issues/${{ inputs.issueID }}/comments -f body='${{ inputs.message }}'"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
