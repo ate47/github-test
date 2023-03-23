@@ -1,0 +1,25 @@
+name: Test issue message
+
+on:
+  workflow_dispatch:
+    inputs:
+      issueID:
+        description: "Issue id"
+        required: true
+        type: string
+      repository:
+        description: "Repo"
+        required: true
+        type: string
+
+jobs:
+  labels:
+    name: 🔃 Sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 🔃 Sync
+        shell: pwsh
+        run: "gh api repos/${{ inputs.repository }}/issues/${{ inputs.issueID }}/comments -f body='${{ inputs.syncFile }}'"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
